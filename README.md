@@ -54,6 +54,7 @@ How to set environment variables will be specific to your operating system.
 Rather than recreate the various methods and best practices in achieving this,
 it's suggested that you search for a dedicated guide focused on your OS.
 
+
 ### Scripting
 
 An example script is included at `scripts/example.coffee`, so check it out to
@@ -63,6 +64,7 @@ For many common tasks, there's a good chance someone has already one to do just
 the thing.
 
 [scripting-docs]: https://github.com/github/hubot/blob/master/docs/scripting.md
+
 
 ### external-scripts
 
@@ -108,6 +110,7 @@ to including all scripts.**
 
 [npmjs]: https://www.npmjs.com
 
+
 ### hubot-scripts
 
 Before hubot plugin packages were adopted, most plugins were held in the
@@ -120,6 +123,7 @@ extension as a double quoted string to the `hubot-scripts.json` file in this
 repo.
 
 [hubot-scripts]: https://github.com/github/hubot-scripts
+
 
 ##  Persistence
 
@@ -134,6 +138,7 @@ If you don't need any persistence feel free to remove the `hubot-redis-brain`
 from `external-scripts.json` and you don't need to worry about redis at all.
 
 [redistogo]: https://redistogo.com/
+
 
 ## Adapters
 
@@ -154,6 +159,7 @@ can then run hubot with the adapter.
 Where `<adapter>` is the name of your adapter without the `hubot-` prefix.
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
+
 
 ## Deployment
 
@@ -183,6 +189,7 @@ hubot onto Windows][deploy-windows] wiki pages.
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 [deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 
+
 ## Campfire Variables
 
 If you are using the Campfire adapter you will need to set some environment
@@ -208,7 +215,9 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
+
 ## Restart the bot
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
