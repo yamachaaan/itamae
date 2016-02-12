@@ -7,13 +7,13 @@
 module.exports = (robot) ->
   cid = setInterval ->
     return if typeof robot?.send isnt 'function'
-    robot.send {room: "general"}, "Hello!"
+    robot.send {room: "general"}, "板前電源オン"
     clearInterval cid
   , 1000
 
   ## 寝た時、通知してからexitする
   on_sigterm = ->
-    robot.send {room: "general"}, 'Bye!'
+    robot.send {room: "general"}, '板前電源オフ'
     setTimeout process.exit, 1000
 
   if process._events.SIGTERM?
