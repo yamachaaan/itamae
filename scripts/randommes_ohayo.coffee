@@ -9,8 +9,7 @@
 
 module.exports = (robot) ->
     words = [
-      "おはよう"
-      "おはよー"
+      /おはよ(う|ー)/
     ]
     itamaesan = [
       "おはようございます"
