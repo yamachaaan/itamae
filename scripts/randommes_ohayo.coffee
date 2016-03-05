@@ -8,6 +8,21 @@
 #
 
 module.exports = (robot) ->
-    robot.hear /おはよう/,(msg) ->
-        msg.reply msg.random ["おはようございます","およはーっす","うぃーっす","はよーっす","おはよう！"]
+    words = [
+      "おはよう"
+      "おはよー"
+    ]
+    itamaesan = [
+      "おはようございます"
+      "およはーっす"
+      "うぃーっす"
+      "はよーっす"
+      "おはよう！"
+    ]
+    for word in words
+      robot.hear word,(msg) ->
+        msg.send msg.random itamaesan
+
+
+
 
