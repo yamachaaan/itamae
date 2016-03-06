@@ -20,7 +20,7 @@ module.exports = (robot) ->
     ]
     for word in words
       robot.hear word,(msg) ->
-        msg.send msg.random itamaesan
+        msg.reply msg.random itamaesan
 
 
 
