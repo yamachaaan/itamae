@@ -9,5 +9,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-heroku-keepalive",
-  "hubot-weather-ja"
+  "hubot-weather-ja",
+  "hubot-shubot"
 ]
