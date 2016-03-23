@@ -1,6 +1,6 @@
 # Description
 #   コマンドの概要
-# "なん…だと…"で板前さんがいろんな画像をと返してくれる
+# "霊圧が消えた…？"で板前さんがいろんな画像をと返してくれる
 # Commands:
 #   コマンド - コマンドの説明
 # good
@@ -8,5 +8,5 @@
 #
 
 module.exports = (robot) ->
-    robot.hear /good/i, (msg) ->
-        msg.send "http://mangadget.net/img/comic_image/182/14622aabd8d7b8bfe37217fee929af91.jpg?" + (new Date().getTime())
+    robot.hear /霊圧が消えた…?/i, (msg) ->
+        msg.send "https://github.com/yamachaaan/itamae/blob/master/img/エンリコ・プッチ.jpg" + (new Date().getTime())
